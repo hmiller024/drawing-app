@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- Slider -->
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="113dp" />
+
+
+<!--    &lt;!&ndash; Button Container &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        &lt;!&ndash; Exit Button &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnExit"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Exit" />-->
+
+<!--        &lt;!&ndash; Confirm Button &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/btnConfirm"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Confirm" />-->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

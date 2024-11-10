@@ -1,0 +1,63 @@
+<!-- tool_shape_fragment.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ToolbarToolFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnPen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pen" />
+
+    <!--        called whiteout since it behaves more like whiteout than an eraser-->
+
+    <Button
+        android:id="@+id/btnEraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whiteout" />
+
+    <Button
+        android:id="@+id/btnPaintbrush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paintbrush" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInvert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invert"/>
+
+        <Button
+            android:id="@+id/btnBlur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blur" />
+
+        <Button
+            android:id="@+id/btnDither"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dither" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

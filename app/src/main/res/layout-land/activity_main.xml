@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:baselineAligned="false" >
+
+    <!-- Column 1: Canvas -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Canvas"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/canvasFragmentView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- Column 2: Toolbar Options -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Toolbar Options"
+            android:textColor="@android:color/holo_purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/expandedToolbarFragmentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/landscapeColorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center|bottom"
+                android:text="Color" />
+            <Button
+                android:id="@+id/sizeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center|bottom"
+                android:text="Size" />
+            <Button
+                android:id="@+id/toolButton"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center|bottom"
+                android:text="Pen" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center|bottom"
+                android:text="Save" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="fileName" />
+        <Button
+            android:id="@+id/canvasListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center|bottom"
+            android:text="Drawings" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/listOfCanvasesComposableFragmentView"
+            android:layout_width="match_parent"
+            android:layout_height="101dp" />
+    </LinearLayout>
+
+</LinearLayout>

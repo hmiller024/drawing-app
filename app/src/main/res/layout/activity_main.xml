@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/canvasListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center|bottom"
+        android:text="Drawings" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/listOfCanvasesComposableFragmentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canvas"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/canvasFragmentView"
+        android:layout_width="match_parent"
+        android:layout_height="382dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="Toolbar Options"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/expandedToolbarFragmentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+
+        <Button
+            android:id="@+id/colorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center|bottom"
+            android:text="Color" />
+
+        <Button
+            android:id="@+id/sizeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center|bottom"
+            android:text="Size" />
+
+        <Button
+            android:id="@+id/toolButton"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center|bottom"
+            android:text="Pen" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_gravity="center|bottom"
+            android:text="Save" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="fileName" />
+
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/ShareButtonFragmentView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>
